@@ -134,13 +134,14 @@ section[data-testid="stSidebar"] .stSelectbox label {
 
 /* ── Section title underline accent ────────── */
 .section-title {
-    color: var(--blanco) !important;
-    font-size: 1.3rem;
-    font-weight: 600;
+    color: #FFFFFF !important;
+    font-size: 1.55rem;
+    font-weight: 700;
     padding-bottom: 6px;
     border-bottom: 3px solid var(--amarillo);
     display: inline-block;
     margin-bottom: 16px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
 /* ── Tabs styling ──────────────────────────── */

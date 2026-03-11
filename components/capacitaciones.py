@@ -18,6 +18,13 @@ def render_capacitaciones(df_enc: pd.DataFrame) -> None:
         '<p class="section-title">🎓 Capacitaciones solicitadas</p>',
         unsafe_allow_html=True,
     )
+    st.markdown(
+        '<p style="color:#FFFFFF; font-size:1.07rem; margin:-10px 0 12px 0;">'
+        'Temas de capacitación seleccionados por los operarios en la encuesta. '
+        'Muestra la cantidad de solicitudes y su porcentaje sobre el total de encuestados.'
+        '</p>',
+        unsafe_allow_html=True,
+    )
 
     total_encuestados = len(df_enc)
     rows = []

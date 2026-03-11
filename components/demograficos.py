@@ -30,6 +30,13 @@ def render_demograficos(df_enc: pd.DataFrame) -> None:
         '<p class="section-title">📱 Perfil del encuestado</p>',
         unsafe_allow_html=True,
     )
+    st.markdown(
+        '<p style="color:#FFFFFF; font-size:1.07rem; margin:-10px 0 12px 0;">'
+        'Características generales de los operarios que respondieron la encuesta: '
+        'uso de WhatsApp en su vida diaria y antigüedad trabajando en Limtek.'
+        '</p>',
+        unsafe_allow_html=True,
+    )
 
     col_left, col_right = st.columns(2)
 

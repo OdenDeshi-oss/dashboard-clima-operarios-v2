@@ -19,6 +19,13 @@ def render_ranking(df_enc: pd.DataFrame) -> None:
         '<p class="section-title">🏆 Ranking de preguntas Likert</p>',
         unsafe_allow_html=True,
     )
+    st.markdown(
+        '<p style="color:#FFFFFF; font-size:1.07rem; margin:-10px 0 12px 0;">'
+        'Promedio de satisfacción por dimensión evaluada en la encuesta de clima laboral (escala 1–5). '
+        'Destaca la mejor y peor dimensión según la percepción de los operarios.'
+        '</p>',
+        unsafe_allow_html=True,
+    )
 
     mejor, peor = ranking_mejor_peor(df_enc)
 

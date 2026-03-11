@@ -37,6 +37,13 @@ def render_likert_detail(df_enc: pd.DataFrame) -> None:
         '<p class="section-title">📊 Detalle por pregunta Likert</p>',
         unsafe_allow_html=True,
     )
+    st.markdown(
+        '<p style="color:#FFFFFF; font-size:1.07rem; margin:-10px 0 12px 0;">'
+        'Distribución de respuestas por cada dimensión evaluada (escala 1–5). '
+        'Incluye promedio individual y porcentaje de satisfacción Top-2 (respuestas 4 y 5).'
+        '</p>',
+        unsafe_allow_html=True,
+    )
 
     df_prom = promedio_por_pregunta(df_enc)
 
@@ -68,7 +75,7 @@ def render_likert_detail(df_enc: pd.DataFrame) -> None:
                     {key}
                 </span>
             </div>
-            <p style="color:#8888aa; font-size:0.82rem; margin:2px 0 10px 0;">
+            <p style="color:#FFFFFF; font-size:1.0rem; margin:2px 0 10px 0;">
                 {col_orig}
             </p>""",
             unsafe_allow_html=True,

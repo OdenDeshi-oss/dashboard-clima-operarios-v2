@@ -34,6 +34,13 @@ def _render_bloques_section(
         f'<p class="section-title">{emoji} {title}</p>',
         unsafe_allow_html=True,
     )
+    st.markdown(
+        '<p style="color:#FFFFFF; font-size:1.07rem; margin:-10px 0 12px 0;">'
+        'Análisis de respuestas abiertas agrupadas por bloques conceptuales según menciones de los operarios. '
+        'Explora el detalle clasificado por tema en la sección desplegable.'
+        '</p>',
+        unsafe_allow_html=True,
+    )
 
     df_bloques = bloques_fn(series)
     total_resp = int(series.dropna().shape[0])

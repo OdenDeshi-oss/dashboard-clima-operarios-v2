@@ -70,6 +70,13 @@ def render_cumplimiento(
         '<p class="section-title">📌 Cumplimiento de participación</p>',
         unsafe_allow_html=True,
     )
+    st.markdown(
+        '<p style="color:#FFFFFF; font-size:1.07rem; margin:-10px 0 12px 0;">'
+        'Comparación entre el inventario de operarios registrados y el total de respuestas recibidas '
+        'según el filtro activo. Muestra el nivel de participación por unidad.'
+        '</p>',
+        unsafe_allow_html=True,
+    )
 
     # ── Bloque informativo del filtro activo ─────────────────
     total_inv = len(df_inv)
